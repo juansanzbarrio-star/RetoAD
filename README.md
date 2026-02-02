@@ -10,7 +10,7 @@ La aplicación permite a los miembros de la comunidad educativa:
 ## 🛠️ Tecnologías utilizadas
 - **Java EE** (Servlets & JSP)
 - **Hibernate** (Gestión de base de datos)
-- **MySQL** (Base de datos 'sede') [cite: 96]
+- **MySQL** (Base de datos 'sede')
 - **Maven** (Gestión de dependencias)
 - **Tomcat** (Servidor de aplicaciones)
 
