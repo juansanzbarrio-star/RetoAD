@@ -1,26 +1,23 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Mensaje</title>
-</head>
+<head><title>Mensaje</title></head>
 <body>
-	<--! SI LA GRABACION ES CORRECTA MUESTRA ESTE MENSAJE -->
-	<p>La grabación se ha realizado correctamente. Guarde el siguiente
-		número de registro:
-	<p>Numero de registro: ${param.numeroRegistro}</p>
-	<p>Fecha de registro: ${param.fechaRegistro}</p>
-	</p>
+    <h3>SEDE ELECTRÓNICA GF</h3>
+    
+    <% if (request.getAttribute("error") == null) { %>
+        <p>La grabación se ha realizado correctamente. Guarde el siguiente número de registro:</p>
+        <p><b>Número registro: <%= request.getAttribute("numeroRegistro") %></b></p>
+        <p>Fecha de registro: <%= request.getAttribute("fechaRegistro") %></p>
+    <% } else { %>
+        <p style="color:red;">No se ha registrado el trámite. Error al realizar la grabación.</p>
+    <% } %>
 
-	<--! SI LA GRABACION NO ES CORRECTA MUESTRA ESTE MENSAJE -->
-	<p>No se ha registrado el trámite. Error al realizar la grabación</p>
-
-
-	<form action="" method="post">
-		<input type="submit" name="nRegistro" value="Nuevo Registro">
-		<input type="submit" name="cRegistro" value="Consultar Registro">
-	</form>
+    <br>
+    <a href="registro.jsp"><button>Nuevo Registro</button></a>
+    <a href="buscar.jsp"><button>Consulta Registro</button></a>
+    
+    <br><br>
+    <footer>C/Gabilondo, 23-47007 Valladolid... centro@gregoriofer.com</footer>
 </body>
 </html>

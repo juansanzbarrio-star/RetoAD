@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS sede;
+USE sede;
+
+CREATE TABLE registros (
+    numero_registro VARCHAR(20) PRIMARY KEY,
+    dni VARCHAR(9) NOT NULL,
+    nombre VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    tramite VARCHAR(100) NOT NULL,
+    entidad VARCHAR(50) NOT NULL,
+    fecha DATETIME NOT NULL
+);
