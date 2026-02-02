@@ -1,4 +1,4 @@
-# RETO AD - Javier Villacorta y Juan Sanz
+# RETO 2 AD - Javier Villacorta y Juan Sanz
 ## SEDE ELECTRÓNICA GF - Proyecto Acceso a Datos
 
 Aplicación web Java EE desarrollada bajo el patrón **MVC** (Modelo-Vista-Controlador) utilizando **Hibernate Nativo** para la persistencia de datos.
